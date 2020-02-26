@@ -60,19 +60,19 @@ def CheckData(pH, fritKlor, bundetKlor):
 		while pH < 7:
 			pH += 0.2
 		nuværendepH = round(pH, 2)
-		print("Vi recirkulerer vandet, for at fjerne noget af kloret. \npH'en er nu: " + str(nuværendepH))
+		print("Vi tilføjer klor for at hæve pH værdien. \npH'en er nu: " + str(nuværendepH))
 		
 	if fritKlor >=3:
 		while fritKlor >= 3:
 			fritKlor -= 0.2
 		global nuværendeFritKlor
 		nuværendeFritKlor = fritKlor
-		print("\nVi tilsætter lidt klor. \nfritKlor koncentrationen er nu: " + str(fritKlor) + " mg/L")
+		print("\nVi recirkulerer vandet, for at fjerne noget af kloret. \nfritKlor koncentrationen er nu: " + str(fritKlor) + " mg/L")
 	if fritKlor < 0.5:
 		while fritKlor < 0.5:
 			fritKlor += 0.2
 		nuværendeFritKlor = fritKlor
-		print("\nVi recirkulerer vandet, for at fjerne noget af kloret. \nfritKlor koncentrationen er nu: " + str(fritKlor) + " mg/L")
+		print("\nVi tilsætter lidt klor. \nfritKlor koncentrationen er nu: " + str(fritKlor) + " mg/L")
 
 	if bundetKlor >=1:
 		while bundetKlor >= 1:
