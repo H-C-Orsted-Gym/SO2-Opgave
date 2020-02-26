@@ -30,20 +30,20 @@ nuværendeBundetKlor = 0
 def CheckWater(førpH, førFritKlor, førBundetKlor):
     global nuværendepH
     nuværendepH = round(random.uniform(førpH - 0.1, førpH + 0.1), 2)
-    print ("nuværende pH værdi er:", nuværendepH)
+    print("nuværende pH værdi er:", nuværendepH)
 
     global nuværendeFritKlor
     nuværendeFritKlor = round(random.uniform(førFritKlor - 0.1, førFritKlor + 0.1), 2)
     if nuværendeFritKlor <= 0:
         nuværendeFritKlor = 0
-    print ("nuværende frit klor mængde er:", nuværendeFritKlor)
+    print("nuværende frit klor mængde er:", nuværendeFritKlor)
 
     
     global nuværendeBundetKlor
     nuværendeBundetKlor = round(random.uniform(førBundetKlor - 0.1, førBundetKlor + 0.1), 2)
     if nuværendeBundetKlor <= 0:
         nuværendeBundetKlor = 0
-    print ("nuværende bundet klor mængde er:", nuværendeBundetKlor)
+    print("nuværende bundet klor mængde er:", nuværendeBundetKlor)
 
     
     
