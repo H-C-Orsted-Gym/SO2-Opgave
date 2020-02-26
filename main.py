@@ -54,13 +54,13 @@ def CheckData(pH, fritKlor, bundetKlor):
 		while pH >= 7.4:
 			pH -= 0.2
 		global nuværendepH
-		nuværendepH = pH
-		print("Vi recirkulerer vandet, for at fjerne noget af kloret. \npH'en er nu: " + str(pH))
+		nuværendepH = round(pH, 2)
+		print("Vi recirkulerer vandet, for at fjerne noget af kloret. \npH'en er nu: " + str(nuværendepH))
 	if pH < 7:
 		while pH < 7:
 			pH += 0.2
-		nuværendepH = pH
-		print("Vi recirkulerer vandet, for at fjerne noget af kloret. \npH'en er nu: " + str(pH))
+		nuværendepH = round(pH, 2)
+		print("Vi recirkulerer vandet, for at fjerne noget af kloret. \npH'en er nu: " + str(nuværendepH))
 		
 	if fritKlor >=3:
 		while fritKlor >= 3:
@@ -79,7 +79,7 @@ def CheckData(pH, fritKlor, bundetKlor):
 			bundetKlor -= 0.2
 		global nuværendeBundetKlor
 		nuværendeBundetKlor = bundetKlor
-		print(time.asctime( time.localtime(time.time()) ), "Vi filtrere vand ud.\n bundetKlor koncentrationen er nu er nu: " + str(bundetKlor) + " mg/L")
+		print("Vi filtrere vand ud.\n bundetKlor koncentrationen er nu er nu: " + str(bundetKlor) + " mg/L")
 
 def getTime():
 	x = datetime.datetime.now()
