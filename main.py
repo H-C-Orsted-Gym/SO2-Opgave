@@ -89,10 +89,10 @@ def getTime():
 
 while True: 
 	time.sleep(5)
-	print("---------------" + getTime() + "---------------")
+	print("-----------------" + getTime() + "-----------------")
 	CheckWater(nuværendepH,nuværendeFritKlor,nuværendeBundetKlor)
 	CheckData(nuværendepH,nuværendeFritKlor,nuværendeBundetKlor)
-	print("---------------------------------------------------")
+	print("-------------------------------------------------------")
 	print("\n\n")
 
 
